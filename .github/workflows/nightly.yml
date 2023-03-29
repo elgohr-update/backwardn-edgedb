@@ -415,7 +415,7 @@ jobs:
         path: edgedb/dockerfile
 
     - name: Publish Docker Image (${{ matrix.target }})
-      uses: elgohr/Publish-Docker-Github-Action@2.6
+      uses: elgohr/Publish-Docker-Github-Action@v5
       if: matrix.target == 'debian-stretch'
       with:
         name: edgedb/edgedb:nightly
